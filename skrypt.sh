@@ -22,4 +22,9 @@ elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "  --date : Wyświetla dzisiejszą datę."
     echo "  --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
     echo "  --help : Wyświetla wszystkie dostępne opcje."
+elif [ "$1" = "--init" ]; then
+    git clone git@github.com:anhelinakruk/Lab04.git repository
+    repo_path="$(pwd)/repository"
+    export PATH="$PATH:$repo_path"
+    echo "Repositorium sklonowane i dodane do PATH."
 fi
