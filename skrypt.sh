@@ -22,9 +22,8 @@ elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo " -d, --date : Wyświetla dzisiejszą datę."
     echo " -l [liczba_plików], --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
     echo " -h, --help : Wyświetla wszystkie dostępne opcje."
-    echo "  --date : Wyświetla dzisiejszą datę."
-    echo "  --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
-    echo "  --help : Wyświetla wszystkie dostępne opcje."
+    echo " -e [liczba_plików], --error [liczba_plików] : Tworzy pliki error. Domyślna ilośc to 100."
+    echo " -i, --init : Klonuje całe repozytorium oraz ustawia ścieżkę w zmiennej PATH."
 # skrypt.sh --init
 elif [ "$1" = "--init" ] || [ "$1" = "-i" ] ; then
     git clone git@github.com:anhelinakruk/Lab04.git repository
