@@ -19,6 +19,9 @@ elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
 # skrypt.sh --help
 elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "Dostępne opcje:"
+    echo " -d, --date : Wyświetla dzisiejszą datę."
+    echo " -l [liczba_plików], --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
+    echo " -h, --help : Wyświetla wszystkie dostępne opcje."
     echo "  --date : Wyświetla dzisiejszą datę."
     echo "  --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
     echo "  --help : Wyświetla wszystkie dostępne opcje."
