@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # skrypt.sh --date
-if [ "$1" = "--date" ]; then
+if [ "$1" = "--date" ] || [ "$1" = "-d" ]; then
     date +"Dzisiejsza data: %Y-%m-%d"
 # skrypt.sh --logs
-elif [ "$1" = "--logs" ]; then
+elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
     if [ -n "$2" ]; then
         num_logs=$2
     else
@@ -17,7 +17,7 @@ elif [ "$1" = "--logs" ]; then
     done
     echo "Utworzono $num_logs plików log."
 # skrypt.sh --help
-elif [ "$1" = "--help" ]; then
+elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "Dostępne opcje:"
     echo "  --date : Wyświetla dzisiejszą datę."
     echo "  --logs [liczba_plików] : Tworzy pliki log. Domyślna ilośc to 100."
